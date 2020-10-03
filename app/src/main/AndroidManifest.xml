@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tracker">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".FirebaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".pregnant.DoctorDetailsCardActivity"></activity>
+        <activity android:name=".CardActivity" />
+        <activity android:name=".pregnant.NutritionDetailsActivity" />
+        <activity android:name=".pregnant.model.Nutrition" />
+        <activity android:name=".mother.NewHealthActivity" />
+        <activity
+            android:name=".mother.SettingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".mother.TimerNotificationActionReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="stop" />
+                <action android:name="pause" />
+                <action android:name="resume" />
+                <action android:name="start" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".mother.TimerExpireReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".mother.DiapersActivity"
+            android:label="@string/title_activity_diapers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".mother.SleepActivity" />
+        <activity android:name=".mother.HealthActivity" />
+        <activity android:name=".mother.TemperatureActivity" />
+        <activity android:name=".mother.DevelopmentActivity" />
+        <activity
+            android:name=".pregnant.FirstArticleActivity"
+            android:label="Pregnancy Health and Wellness" />
+        <activity android:name=".pregnant.NutritionPregnantActivity" />
+        <activity
+            android:name=".pregnant.ArticlesActivity"
+            android:label="Articles" />
+        <activity android:name=".pregnant.DoctorDetailsActivity" />
+        <activity android:name=".mother.MotherProfileActivity" />
+        <activity
+            android:name=".pregnant.DoctorsActivity"
+            android:label="Doctors" />
+        <activity
+            android:name=".pregnant.ConsultationActivity"
+            android:label="Consultation" />
+        <activity android:name=".mother.BabyProfileActivity" />
+        <activity android:name=".mother.TrackerFeedingActivity" />
+        <activity
+            android:name=".mother.FirstNutritionActivity"
+            android:label="1 week" />
+        <activity
+            android:name=".mother.FirstFeedingActivity"
+            android:label="Breastfeeding: practical tips" />
+        <activity android:name=".mother.FeedingActivity" />
+        <activity android:name=".mother.NutritionActivity" />
+        <activity android:name=".mother.PainActivity" />
+        <activity android:name=".mother.TrackerMotherActivity" />
+        <activity android:name=".mother.MotherMainActivity" />
+        <activity android:name=".pregnant.AdviceActivity" />
+        <activity android:name=".weeks.IncreaseSllepActivity" />
+        <activity
+            android:name=".FaqActivity"
+            android:label="FAQ" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:label="How To Get Started?" />
+        <activity android:name=".pregnant.NewTrackerActivity" />
+        <activity android:name=".pregnant.TrackerActivity" />
+        <activity
+            android:name=".weeks.FirstWeekActivity"
+            android:parentActivityName=".pregnant.GeneralActivity" />
+        <activity android:name=".pregnant.CalendarActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Guide For Use" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About" />
+        <activity
+            android:name=".pregnant.ProfileActivity"
+            android:label="Profile" />
+        <activity android:name=".pregnant.GeneralActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".signinMother.SigninMother" />
+        <activity android:name=".signinPregnant.SigninPregnant" />
+        <activity android:name=".signinMother.SignupMother" />
+        <activity android:name=".signinPregnant.SignupPregnant" />
+        <activity android:name=".GenderActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

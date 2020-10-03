@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weeks.IncreaseSllepActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sleep_img"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Increasing sleep"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@id/image_sleep"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:id="@+id/clear_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/clear_icon"/>
+
+
+            <TextView
+                android:id="@+id/text_sleep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:text="Poor sleep can leave you feeling fatigued and crancy. But did you know
+a lack of sleep can also affect your fertility? Humans have an innate sleep-wake cycle. When
+that sleep cycle is disrupted, you may experience physical and behavioural changes including
+hormonal imbalances. Exactly how sleep deprivation affects fertility, is still being researched, but
+doctors have a few ideas."
+                android:layout_below="@id/text_sleep"/>
+
+            <TextView
+                android:id="@+id/text_sleep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/text_sleep1"
+                android:layout_marginTop="10dp"
+                android:text="Follicle srimulating hormone levels apppear to decrease in women who only get six hours
+or less sleep each night. Egg quality may also be affected by insufficient sleep. Besides the physical effects of lack of sleep,
+being blearly-eyed can also increase stress levels which hardly puts you inn the mood for baby-making."/>
+
+
+            <TextView
+                android:id="@+id/text_sleep3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sleep2"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="16dp"
+                android:text="Practical things you can do"/>
+
+            <TextView
+                android:id="@+id/text_sleep4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sleep3"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="There are things you can do to increase your changes of getting enough sleep each night.
+Although caffeine may help you get through your day, it is a bad idae when it comes to quality sleep,
+so try to limit caffeine intake several hours before bedtime."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@id/text_sleep4"
+                android:text="Going to sleep the same time each night can also help regulate your bode clock. It can also be hard to get to sleep
+if your mind is going a mile a minute, so give yourself a little time to wind down at the end of the day. Try something relaxing, such as taking a warm bath, reading or meditating."/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

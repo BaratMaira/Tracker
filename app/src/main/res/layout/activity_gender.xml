@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GenderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background1"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        android:scaleX="0.98"
+        android:scaleY="0.99">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="2"
+            android:background="@color/colorBackground"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE MODE : "
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_above="@id/buttonPregnant"
+        android:layout_marginBottom="100dp"
+        android:textColor="@android:color/black"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPregnant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_button"
+        android:gravity="center"
+        android:minWidth="110dp"
+        android:text="Pregnant"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:backgroundTint="#ffff" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_button"
+        android:gravity="center"
+        android:minWidth="110dp"
+        android:text="Mother"
+        android:textSize="14sp"
+        android:layout_below="@+id/buttonPregnant"
+        android:textColor="@android:color/black"
+        app:backgroundTint="#ffff"/>
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scaleType="centerCrop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="2"
+            android:background="@color/colorBackground"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/button_get_started"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/circle"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:text="1"
+            app:layout_constraintBottom_toBottomOf="@+id/circle"
+            app:layout_constraintEnd_toEndOf="@+id/circle"
+            tools:ignore="RtlHardcoded" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/circle"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:text="Choose topic to focus in"
+            app:layout_constraintBottom_toBottomOf="@+id/circle"
+            app:layout_constraintStart_toEndOf="@+id/circle"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="160dp">
+
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/button_get_started"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/circle1"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:text="2"
+            app:layout_constraintBottom_toBottomOf="@+id/circle1"
+            app:layout_constraintEnd_toEndOf="@+id/circle1"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/circle1"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:text="If you doesn't have account Sign Up"
+            app:layout_constraintBottom_toBottomOf="@+id/circle1"
+            app:layout_constraintStart_toEndOf="@+id/circle1"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="220dp">
+
+        <ImageView
+            android:id="@+id/circle2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/button_get_started"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/circle2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:text="3"
+            app:layout_constraintBottom_toBottomOf="@+id/circle2"
+            app:layout_constraintEnd_toEndOf="@+id/circle2"
+            tools:ignore="RtlHardcoded" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/circle2"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:text="Sign In for Mother Care Application"
+            app:layout_constraintBottom_toBottomOf="@+id/circle2"
+            app:layout_constraintStart_toEndOf="@+id/circle2"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="280dp">
+
+        <ImageView
+            android:id="@+id/circle4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/button_get_started"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/circle4"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:text="4"
+            app:layout_constraintBottom_toBottomOf="@+id/circle4"
+            app:layout_constraintEnd_toEndOf="@+id/circle4"
+            tools:ignore="RtlHardcoded" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/circle4"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="Start to using"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circle4"
+            app:layout_constraintStart_toEndOf="@+id/circle4"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</RelativeLayout>

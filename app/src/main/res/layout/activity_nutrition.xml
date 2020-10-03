@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scaleType="centerCrop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="2"
+            android:background="@color/colorBackground"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/circle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/background_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Week"
+            android:textAlignment="center"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/circle1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/background_button"
+            app:layout_constraintBottom_toBottomOf="@id/circle"
+            app:layout_constraintEnd_toEndOf="@id/circle"
+            app:cardCornerRadius="10dp"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Week"
+                android:textAlignment="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="280dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/circle2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/background_button"
+            app:layout_constraintBottom_toBottomOf="@id/circle1"
+            app:layout_constraintEnd_toEndOf="@id/circle1"
+            app:cardCornerRadius="10dp"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Week"
+                android:textAlignment="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="360dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/circle3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/background_button"
+            app:layout_constraintBottom_toBottomOf="@id/circle"
+            app:layout_constraintEnd_toEndOf="@id/circle"
+            app:cardCornerRadius="10dp"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Week"
+                android:textAlignment="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="440dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/circle4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/background_button"
+            app:layout_constraintBottom_toBottomOf="@id/circle"
+            app:layout_constraintEnd_toEndOf="@id/circle"
+            app:cardCornerRadius="10dp"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Week"
+                android:textAlignment="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="520dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/circle6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/background_button"
+            app:layout_constraintBottom_toBottomOf="@id/circle"
+            app:layout_constraintEnd_toEndOf="@id/circle"
+            app:cardCornerRadius="10dp"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 Week"
+                android:textAlignment="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

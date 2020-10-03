@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mother.FirstFeedingActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/toolbar"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/feeding_bckg2"
+                android:backgroundTint="@color/colorBackground"
+                android:orientation="vertical"
+                android:scaleType="centerCrop">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image_meal"
+                            android:layout_width="120dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/feeding_1"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/textView_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@id/image_meal"
+                            android:text="Cradle"
+                            android:textAlignment="center"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/textView_title"
+                            android:layout_toRightOf="@id/image_meal"
+                            android:text="The most common feeding position. Mom sits down and takes
+the baby so that his head is on the elbow. Turns him to his tummy and gives the chest. With the palm
+of the other hand, mom supports the baby's ass and back."
+                            android:layout_marginLeft="5dp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_below="@id/cardView1"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="120dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/feeding_2"
+                            android:scaleType="centerCrop"
+                            android:layout_toRightOf="@id/textView_desc1"/>
+
+                        <TextView
+                            android:id="@+id/textView_title1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:text=" Back Cradle"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView_desc1"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/textView_title1"
+                            android:text="This kind of cradle postion will help the baby properly grab the chest in the first days after birth. This situation especially convenient in the case of premature and lightweigth babies."
+                             android:layout_marginLeft="5dp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@id/cardView2"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="120dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/feeding_3"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@id/image2"
+                            android:text="Lying on its side"
+                            android:textAlignment="center"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView_desc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/textView2"
+                            android:layout_toRightOf="@id/image2"
+                            android:text="Most often, this situation is used during night feedings.You and your baby lie on your sides facing each other. Your baby's chest should face your chest, and your baby's mouth should be level with your nipple. Pull your baby close. In this position, you can cradle your baby's back with your forearm. Support yourself with pillows behind your back. Be careful not to surround your baby with loose clothing or bedding."
+                            android:layout_marginLeft="5dp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".pregnant.FirstArticleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <include
+            layout="@layout/toolbar"/>
+
+        <ImageView
+            android:id="@+id/backdrop_path"
+            android:layout_width="408dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:background="@drawable/undraw_mobile_browsers_lib5"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/movie_poster_card"
+            android:layout_width="128dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/backdrop_path"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backdrop_path">
+
+            <ImageView
+                android:id="@+id/poster_path"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="128dp"
+                android:background="@drawable/article1"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        <androidx.constraintlayout.widget.Guideline-->
+        <!--            android:id="@+id/backdrop_guideline"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintGuide_percent="0.02" />-->
+
+        <TextView
+            android:id="@+id/name_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movie_poster_card"
+            app:layout_constraintTop_toBottomOf="@+id/backdrop_path"
+            android:text="Pregnancy Health and Wellness"/>
+
+        <TextView
+            android:id="@+id/position_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/name_detail"
+            app:layout_constraintTop_toBottomOf="@+id/name_detail"
+            android:text=""/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/movie_poster_title_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="position_detail"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/movie_poster_title_barrier"
+            android:text="Description"/>
+
+        <TextView
+            android:id="@+id/description_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            android:text="Mindfulness During Pregnancy and Early Motherhood:"/>
+
+        <TextView
+            android:id="@+id/description_detail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail"
+            android:text="It’s impossible to overlook the physical changes of pregnancy. But, as dramatic as those changes may be"/>
+
+        <TextView
+            android:id="@+id/description_detail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail1"
+            android:text="Awakening the Senses: Pregnancy Body Changes:"/>
+
+        <TextView
+            android:id="@+id/description_detail3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail2"
+            android:text="How your senses are affected by the hormonal changes of pregnancy."/>
+
+        <TextView
+            android:id="@+id/description_detail4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail3"
+            android:text="Pregnant With Possibility, Bursting with Life:"/>
+
+        <TextView
+            android:id="@+id/description_detail5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail4"
+            android:text="Your body knows exactly what it needs to do to prepare itself for pregnancy, birth, and beyond."/>
+
+        <TextView
+            android:id="@+id/description_detail6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail5"
+            android:text="Feed Your Pregnant Body Wisely:"/>
+
+        <TextView
+            android:id="@+id/description_detail7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail6"
+            android:text="Pregnancy is not supposed to be a nine-and-a-half-month ticket to the buffet"/>
+
+        <TextView
+            android:id="@+id/description_detail8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail7"
+            android:text="The Pregnancy Workout Guide:"/>
+
+        <TextView
+            android:id="@+id/description_detail9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail8"
+            android:text="You're exercising for two, baby"/>
+
+        <TextView
+            android:id="@+id/description_detail10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail9"
+            android:text="Unusual Pregnancy Complaints:"/>
+
+        <TextView
+            android:id="@+id/description_detail11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail10"
+            android:text="Belly-button soreness, skin tags, dry eye? Yep, they're all pregnancy-related."/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

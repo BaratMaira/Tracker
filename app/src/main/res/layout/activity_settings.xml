@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/demo_card"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="8dp"
+        android:foreground="@drawable/cardview"
+        android:backgroundTint="#F3F3EA">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Demo for unexperienced"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/crete_round"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="100dp"/>
+
+            <TextView
+                android:id="@+id/demo_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here you will find how to start application"
+                android:layout_below="@id/demo"
+                android:fontFamily="@font/crete_round"
+                android:layout_marginLeft="100dp"/>
+
+            <ImageView
+                android:id="@+id/demo_img"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/demo"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/get_started_card"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="8dp"
+        android:foreground="@drawable/cardview"
+        android:backgroundTint="#F3F3EA">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/get_started"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to get started?"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/crete_round"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="100dp"/>
+
+            <TextView
+                android:id="@+id/get_started_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here you will find how to start application"
+                android:layout_below="@id/get_started"
+                android:fontFamily="@font/crete_round"
+                android:layout_marginLeft="100dp"/>
+
+            <ImageView
+                android:id="@+id/get_started_img"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/get_started_img"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/faq_card"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="8dp"
+        android:foreground="@drawable/cardview"
+        android:backgroundTint="#F3F3EA">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAQ"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/crete_round"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="100dp"/>
+
+            <TextView
+                android:id="@+id/faq_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here you will find how to start application"
+                android:layout_below="@id/faq"
+                android:fontFamily="@font/crete_round"
+                android:layout_marginLeft="100dp"/>
+
+            <ImageView
+                android:id="@+id/faq_img"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/faq1"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/documentation_card"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="8dp"
+        android:foreground="@drawable/cardview"
+        android:backgroundTint="#F3F3EA">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/documentation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documentation"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/crete_round"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="100dp"/>
+
+            <TextView
+                android:id="@+id/documentation_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here you will find how to start application"
+                android:layout_below="@id/documentation"
+                android:fontFamily="@font/crete_round"
+                android:layout_marginLeft="100dp"/>
+
+            <ImageView
+                android:id="@+id/documentation_img"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/documentation_icon"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
